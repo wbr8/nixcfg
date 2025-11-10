@@ -17,8 +17,10 @@
 
   programs.git = {
     enable = true;
-    userName = "wbr8";
-    userEmail = "w.bronakowski08@gmail.com";
+    settings = {
+      user.name = "wbr8";
+      user.email = "w.bronakowski08@gmail.com";
+    };
   };
      
   home.pointerCursor = {

@@ -12,6 +12,9 @@
 
   programs.helix.enable = true;
   programs.alacritty.enable = true;
+  programs.alacritty.settings = {
+    terminal.shell = "${pkgs.nushell}/bin/nu";
+  };
   programs.fuzzel.enable = true;
   programs.btop.enable = true;
 

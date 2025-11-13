@@ -38,11 +38,11 @@
     pkgs.nushell
   ];
 
-  programs.bash.interactiveShellInit = ''
-    if ! [ "$TERM" = "dumb" ]; then
-      exec nu
-    fi
-  '';
+  # programs.bash.interactiveShellInit = ''
+  #   if ! [ "$TERM" = "dumb" ]; then
+  #     exec nu
+  #   fi
+  # '';
 
   # Enable CUPS to print documents.
   # services.printing.enable = true;

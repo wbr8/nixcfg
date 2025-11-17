@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 {
   home.username = "wojtek";
   home.homeDirectory = "/home/wojtek";
@@ -10,12 +10,21 @@
     ungoogled-chromium
   ];
 
+  programs.zen-browser.enable = true;
+
   programs.helix.enable = true;
+
   programs.alacritty.enable = true;
   programs.alacritty.settings = {
     terminal.shell = "${pkgs.nushell}/bin/nu";
   };
+
   programs.fuzzel.enable = true;
+  programs.fuzzel.settings = {
+    border.radius = 0;
+    border.width = 2;
+  };
+
   programs.btop.enable = true;
 
   programs.git = {
@@ -42,10 +51,10 @@
     #   package = pkgs.adwaita-icon-theme;
     #   name = "Adwaita";
     # };
-  #   font = {
-  #     name = "Sans";
-  #     size = 11;
-  #   };
+    # font = {
+    #   name = "Sans";
+    #   size = 11;
+    # };
   };
 
   catppuccin.enable = true;

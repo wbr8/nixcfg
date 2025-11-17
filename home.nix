@@ -13,6 +13,18 @@
   programs.zen-browser.enable = true;
 
   programs.helix.enable = true;
+  programs.helix.settings = {
+    editor = {
+      true-color = true;
+      line-number = "relative";
+      mouse = false;
+      cursor-shape = {
+        insert = "bar";
+        normal = "block";
+        select = "underline";
+      };
+    };
+  };
 
   programs.alacritty.enable = true;
   programs.alacritty.settings = {

@@ -59,6 +59,8 @@
   programs.alacritty.enable = true;
   programs.alacritty.settings = {
     terminal.shell = "${pkgs.nushell}/bin/nu";
+    font.normal = { family = "Iosevka Fixed Semibold"; style = "Semibold"; };
+    font.size = 13;
   };
 
   programs.fuzzel.enable = true;

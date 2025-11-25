@@ -8,6 +8,7 @@
 {
 
   fonts.packages = with pkgs; [
+    iosevka-bin
     nerd-fonts.jetbrains-mono
     corefonts
     vista-fonts

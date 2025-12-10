@@ -52,7 +52,7 @@
 
   users.users.wojtek = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "input" "output" "video" "audio" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "input" "output" "video" "audio" "libvirtd" ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
       tree
     ];

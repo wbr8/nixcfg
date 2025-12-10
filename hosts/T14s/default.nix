@@ -60,6 +60,10 @@
 
   programs.nix-ld.enable = true;
 
+  # Support for virtual machines
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
+  
   environment.systemPackages = with pkgs; [
     nushell
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.

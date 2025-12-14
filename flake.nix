@@ -22,7 +22,8 @@
       modules = [
         ./hosts/T14s
         ./hosts/T14s/hardware
-        ./modules/desktop-environments/hyprland
+        # ./modules/desktop-environments/hyprland
+        ./modules/desktop-environments/kde
 
         home-manager.nixosModules.home-manager {
           home-manager.useGlobalPkgs = true;

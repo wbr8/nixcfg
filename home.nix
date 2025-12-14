@@ -3,6 +3,17 @@
   home.username = "wojtek";
   home.homeDirectory = "/home/wojtek";
 
+  programs.vscode = {
+    enable = true;
+    # profiles.default.extensions = with pkgs.vscode-extensions; [
+    #   catppuccin.catppuccin-vsc
+    #   catppuccin.catppuccin-vsc-icons
+    # ];
+    profiles.default.userSettings = {
+      "editor.fontFamily" = "'Iosevka Fixed Semibold', 'Droid Sans Mono', 'monospace', monospace";
+    };
+  };
+
   home.packages = with pkgs; [
     fastfetch
     btop

@@ -19,6 +19,7 @@
     btop
     libreoffice-fresh
     ungoogled-chromium
+    sequoia-sq
   ];
 
   programs.zen-browser.enable = true;

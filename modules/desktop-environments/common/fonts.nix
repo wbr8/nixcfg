@@ -13,6 +13,7 @@
     corefonts
     vista-fonts
     ubuntu-sans
+    libertinus
   ];
   fonts.fontDir.enable = true;
   fonts.fontconfig.defaultFonts = {

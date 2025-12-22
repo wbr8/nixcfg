@@ -14,6 +14,7 @@
     vista-fonts
     ubuntu-sans
     libertinus
+    newcomputermodern
   ];
   fonts.fontDir.enable = true;
   fonts.fontconfig.defaultFonts = {

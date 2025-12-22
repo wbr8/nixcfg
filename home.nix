@@ -20,6 +20,7 @@
     libreoffice-fresh
     ungoogled-chromium
     sequoia-sq
+    darktable
   ];
 
   programs.zen-browser.enable = true;

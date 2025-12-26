@@ -3,6 +3,13 @@
   home.username = "wojtek";
   home.homeDirectory = "/home/wojtek";
 
+  programs.emacs = {
+    enable = true;
+    extraPackages = epkgs: with epkgs; [
+      use-package
+    ];
+  };
+  
   programs.vscode = {
     enable = true;
     # profiles.default.extensions = with pkgs.vscode-extensions; [

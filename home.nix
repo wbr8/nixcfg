@@ -3,6 +3,12 @@
   home.username = "wojtek";
   home.homeDirectory = "/home/wojtek";
 
+  programs.direnv = {
+    enable = true;
+    enableNushellIntegration = true;
+    nix-direnv.enable = true;
+  };
+  
   programs.emacs = {
     enable = true;
     extraPackages = epkgs: with epkgs; [

@@ -8,6 +8,8 @@
     enableNushellIntegration = true;
     nix-direnv.enable = true;
   };
+
+  programs.nushell.enable = true;
   
   programs.emacs = {
     enable = true;

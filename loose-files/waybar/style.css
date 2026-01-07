@@ -1,0 +1,31 @@
+* {
+  font-family: JetBrainsMono Nerd Font;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+window#waybar {
+  background-color: #181926;
+  color: #cad3f5;
+}
+
+.modules-right {
+  padding: 0px 5px 0px 5px;
+}
+
+#workspaces {
+}
+
+#workspaces button {
+  padding: 0px 11px 0px 11px;
+  min-width: 1px;
+  background: transparent;
+  color: #cad3f5;
+}
+
+#workspaces button.active,
+#workspaces button.focused {
+  padding: 0px 11px 0px 11px;
+  background: #b7bdf8;
+  color: #363a4f;
+}

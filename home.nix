@@ -84,6 +84,8 @@
     };
   };
 
+  programs.zellij.enable = true;
+
   programs.alacritty.enable = true;
   programs.alacritty.settings = {
     terminal.shell = "${pkgs.nushell}/bin/nu";

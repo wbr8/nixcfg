@@ -18,7 +18,7 @@
   ];
   fonts.fontDir.enable = true;
   fonts.fontconfig.defaultFonts = {
-    monospace = [ "JetBrainsMono Nerd Font" ];
+    monospace = [ "JetBrainsMonoNL Nerd Font" ];
     serif = [ "Times New Roman" ];
     sansSerif = [ "Ubuntu Sans" ];
   };

@@ -17,9 +17,17 @@
   (global-company-mode))
 
 ;; for direnv
- (use-package envrc
+(use-package envrc
   :config
   (envrc-global-mode))
+
+;; the dark side
+(use-package evil
+  :config
+  (evil-mode 1))
+
+;; required for evil
+(use-package goto-chg)
 
 ;; --- language specific packages ---
 

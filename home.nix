@@ -1,5 +1,10 @@
 { config, pkgs, inputs, ... }:
 {
+  imports = [
+    inputs.nvf.homeManagerModules.nvf
+    ./nvf.nix
+  ];
+  
   home.username = "wojtek";
   home.homeDirectory = "/home/wojtek";
 
@@ -17,7 +22,7 @@
       use-package
     ];
   };
-  
+
   programs.vscode = {
     enable = true;
     # profiles.default.extensions = with pkgs.vscode-extensions; [
@@ -133,6 +138,7 @@
   };
 
   catppuccin.enable = true;
+  catppuccin.nvim.enable = false;
   catppuccin.flavor = "macchiato";
 
   home.stateVersion = "25.05";

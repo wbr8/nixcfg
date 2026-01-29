@@ -13,9 +13,12 @@
     zen-browser.inputs.nixpkgs.follows = "nixpkgs";
     
     catppuccin.url = "github:catppuccin/nix";
+
+    nvf.url = "github:notashelf/nvf";
+    neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
   };
 
-  outputs = { self, nixpkgs, home-manager, zen-browser, catppuccin, ... } @ inputs: {
+  outputs = { self, nixpkgs, home-manager, zen-browser, catppuccin, nvf, neovim-nightly-overlay, ... } @ inputs: {
 
     nixosConfigurations.T14s = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
@@ -37,6 +40,8 @@
               catppuccin.homeModules.catppuccin
             ];
           };
+
+          home-manager.extraSpecialArgs = { inherit inputs; };
         }
       ];
     };

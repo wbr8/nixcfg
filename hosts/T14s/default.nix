@@ -1,12 +1,13 @@
 # Edit this configuration file to define what should be installed on
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
-
-{ config, lib, pkgs, ... }:
-
 {
-
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
+  nix.settings.experimental-features = ["nix-command" "flakes"];
   nixpkgs.config.allowUnfree = true;
 
   # Use the systemd-boot EFI boot loader.
@@ -17,7 +18,7 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   networking.hostName = "T14s"; # Define your hostname.
-  networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
+  networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
 
   # Set your time zone.
   time.timeZone = "Europe/London";
@@ -52,7 +53,7 @@
 
   users.users.wojtek = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "input" "output" "video" "audio" "libvirtd" ]; # Enable ‘sudo’ for the user.
+    extraGroups = ["wheel" "input" "output" "video" "audio" "libvirtd"]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
       tree
     ];
@@ -63,7 +64,7 @@
   # Support for virtual machines
   virtualisation.libvirtd.enable = true;
   programs.virt-manager.enable = true;
-  
+
   environment.systemPackages = with pkgs; [
     nushell
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
@@ -72,6 +73,7 @@
     helix
     alacritty
     wl-clipboard
+    ripgrep
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -116,6 +118,4 @@
   #
   # For more information, see `man configuration.nix` or https://nixos.org/manual/nixos/stable/options#opt-system.stateVersion .
   system.stateVersion = "25.05"; # Did you read the comment?
-
 }
-

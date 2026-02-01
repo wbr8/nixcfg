@@ -60,6 +60,8 @@ in {
         ts.enable = true;
       };
 
+      telescope.enable = true;
+
       git = {
         enable = true;
         gitsigns.enable = true;
@@ -69,6 +71,18 @@ in {
 
       utility = {
         sleuth.enable = true;
+      };
+
+      luaConfigRC = {
+        basic = ''
+          vim.g.mapleader = " "
+
+          vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
+          vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>")
+          vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>")
+
+          vim.keymap.set("n", "<leader>gg", "<cmd>Neogit<cr>")
+        '';
       };
     };
   };

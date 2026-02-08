@@ -36,7 +36,14 @@ in {
 
       lsp = {
         enable = true;
-        formatOnSave = true;
+        formatOnSave = false;
+        # servers.basedpyright.setupOpts.settings.basedpyright = {
+        #   typeCheckingMode = "off";
+        #   diagnosticMode = "openFilesOnly";
+        #   reportGeneralTypeIssues = false;
+        #   reportUnknownMemberType = false;
+        #   reportUnknownArgumentType = false;
+        # };
       };
 
       languages = {
@@ -52,6 +59,7 @@ in {
         };
         typst.enable = true;
         python.enable = true;
+        python.lsp.servers = [ "python-lsp-server" ];
         svelte.enable = true;
         haskell.enable = true;
         html.enable = true;

@@ -59,7 +59,7 @@ in {
         };
         typst.enable = true;
         python.enable = true;
-        python.lsp.servers = [ "python-lsp-server" ];
+        # python.lsp.servers = [ "python-lsp-server" ];
         svelte.enable = true;
         haskell.enable = true;
         html.enable = true;
@@ -80,6 +80,8 @@ in {
       utility = {
         sleuth.enable = true;
       };
+
+      autocomplete.nvim-cmp.enable = true;
 
       luaConfigRC = {
         basic = ''

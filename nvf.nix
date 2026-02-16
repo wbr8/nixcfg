@@ -62,7 +62,7 @@ in {
         # python.lsp.servers = [ "python-lsp-server" ];
         svelte.enable = true;
         haskell.enable = true;
-        # html.enable = true; # results in evaluation error???
+        html.enable = true; # results in evaluation error???
         css.enable = true;
         json.enable = true;
         ts.enable = true;

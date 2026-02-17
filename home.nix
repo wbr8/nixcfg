@@ -8,6 +8,16 @@
   home.username = "wojtek";
   home.homeDirectory = "/home/wojtek";
 
+  home.packages = [
+    pkgs.fastfetch
+    pkgs.btop
+    pkgs.libreoffice-fresh
+    pkgs.ungoogled-chromium
+    pkgs.sequoia-sq
+    pkgs.darktable
+    hashcards.package.x86_64-linux.default
+  ];
+
   programs.direnv = {
     enable = true;
     enableNushellIntegration = true;
@@ -33,15 +43,6 @@
       "editor.fontFamily" = "'Iosevka Fixed Semibold', 'Droid Sans Mono', 'monospace', monospace";
     };
   };
-
-  home.packages = with pkgs; [
-    fastfetch
-    btop
-    libreoffice-fresh
-    ungoogled-chromium
-    sequoia-sq
-    darktable
-  ];
 
   programs.zen-browser.enable = true;
 

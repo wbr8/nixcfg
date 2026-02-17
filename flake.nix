@@ -16,9 +16,11 @@
 
     nvf.url = "github:notashelf/nvf";
     neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
+
+    hashcards.url = "github:eudoxia0/hashcards";
   };
 
-  outputs = { self, nixpkgs, home-manager, zen-browser, catppuccin, nvf, neovim-nightly-overlay, ... } @ inputs: {
+  outputs = { self, nixpkgs, home-manager, zen-browser, catppuccin, nvf, neovim-nightly-overlay, hashcards, ... } @ inputs: {
 
     nixosConfigurations.T14s = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };

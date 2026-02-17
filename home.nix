@@ -15,7 +15,7 @@
     pkgs.ungoogled-chromium
     pkgs.sequoia-sq
     pkgs.darktable
-    hashcards.package.x86_64-linux.default
+    inputs.hashcards.packages.x86_64-linux.default
   ];
 
   programs.direnv = {

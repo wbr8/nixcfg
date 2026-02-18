@@ -112,7 +112,7 @@
     settings = {
       user.name = "wbr8";
       user.email = "w.bronakowski08@gmail.com";
-      core.editor = "hx";
+      core.editor = "nvim";
     };
   };
      

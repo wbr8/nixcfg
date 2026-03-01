@@ -79,6 +79,7 @@ in {
 
       utility = {
         sleuth.enable = true;
+        surround.enable = true;
       };
 
       autocomplete.nvim-cmp.enable = true;

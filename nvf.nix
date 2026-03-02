@@ -34,6 +34,11 @@ in {
       viAlias = false;
       vimAlias = false;
 
+      options = {
+        tabstop = 4;
+        shiftwidth = 4;
+      }; 
+
       lsp = {
         enable = true;
         formatOnSave = false;
@@ -62,7 +67,7 @@ in {
         # python.lsp.servers = [ "python-lsp-server" ];
         svelte.enable = true;
         haskell.enable = true;
-        html.enable = true; # results in evaluation error???
+        html.enable = true;
         css.enable = true;
         json.enable = true;
         ts.enable = true;
@@ -76,16 +81,22 @@ in {
         gitsigns.codeActions.enable = false;
         neogit.enable = true;
       };
+      
+      mini = {
+        surround.enable = true;
+      };
 
       utility = {
         sleuth.enable = true;
-        surround.enable = true;
+        # surround.enable = true;  # weird default keybindings in nvf, opting to use mini.surround instead
       };
 
       autocomplete.nvim-cmp.enable = true;
 
       luaConfigRC = {
         basic = ''
+          expandtab
+
           vim.g.mapleader = " "
 
           vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")

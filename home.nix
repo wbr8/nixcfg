@@ -15,6 +15,7 @@
     pkgs.ungoogled-chromium
     pkgs.sequoia-sq
     pkgs.darktable
+    pkgs.sioyek
     inputs.hashcards.packages.x86_64-linux.default
   ];
 

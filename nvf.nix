@@ -95,7 +95,7 @@ in {
 
       luaConfigRC = {
         basic = ''
-          expandtab = true
+          vim.opt.expandtab = true
 
           vim.g.mapleader = " "
 

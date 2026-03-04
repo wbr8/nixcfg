@@ -16,6 +16,7 @@
     pkgs.sequoia-sq
     pkgs.darktable
     pkgs.sioyek
+    pkgs.typst
     inputs.hashcards.packages.x86_64-linux.default
   ];
 

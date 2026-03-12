@@ -15,6 +15,7 @@
     ubuntu-sans
     libertinus
     newcomputermodern
+    cascadia-code
   ];
   fonts.fontDir.enable = true;
   fonts.fontconfig.defaultFonts = {

@@ -47,7 +47,6 @@
   };
 
   programs.zen-browser.enable = true;
-  programs.zen-browser.suppressXdgMigrationWarning = true;
 
   xdg.mimeApps = let
     value = let

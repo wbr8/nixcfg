@@ -16,6 +16,7 @@
     libertinus
     newcomputermodern
     cascadia-code
+    symbola
   ];
   fonts.fontDir.enable = true;
   fonts.fontconfig.defaultFonts = {

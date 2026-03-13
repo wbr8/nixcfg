@@ -74,6 +74,7 @@
     alacritty
     wl-clipboard
     ripgrep
+    fd
   ];
 
   programs.steam.enable = true;

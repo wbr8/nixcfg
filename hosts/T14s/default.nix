@@ -75,7 +75,10 @@
     wl-clipboard
     ripgrep
     fd
+    mullvad-vpn
   ];
+
+  services.mullvad-vpn.enable = true;
 
   programs.steam.enable = true;
 

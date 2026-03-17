@@ -17,6 +17,8 @@
     pkgs.darktable
     pkgs.sioyek
     pkgs.typst
+    pkgs.cmakeMinimal
+    pkgs.clang-tools
     inputs.hashcards.packages.x86_64-linux.default
   ];
 
@@ -32,6 +34,7 @@
     enable = true;
     extraPackages = epkgs: with epkgs; [
       use-package
+      vterm
     ];
   };
 

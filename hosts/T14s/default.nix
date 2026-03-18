@@ -75,10 +75,11 @@
     wl-clipboard
     ripgrep
     fd
-    mullvad-vpn
   ];
 
   services.mullvad-vpn.enable = true;
+  services.mullvad-vpn.package = pkgs.mullvad-vpn;
+  services.resolved.enable = true;
 
   programs.steam.enable = true;
 

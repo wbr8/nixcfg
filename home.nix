@@ -19,6 +19,7 @@
     pkgs.typst
     pkgs.cmakeMinimal
     pkgs.clang-tools
+    pkgs.emacs-lsp-booster
     inputs.hashcards.packages.x86_64-linux.default
   ];
 
@@ -35,6 +36,7 @@
     extraPackages = epkgs: with epkgs; [
       use-package
       vterm
+      treesit-grammars.with-all-grammars    # the most BULLSHIT thing ive ever seen. literally only found in forum posts, and NOWHERE else.
     ];
   };
 

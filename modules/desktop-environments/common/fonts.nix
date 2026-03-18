@@ -17,6 +17,7 @@
     newcomputermodern
     cascadia-code
     symbola
+    nerd-fonts.symbols-only
   ];
   fonts.fontDir.enable = true;
   fonts.fontconfig.defaultFonts = {

@@ -8,9 +8,9 @@
   home.username = "wojtek";
   home.homeDirectory = "/home/wojtek";
 
-  home.sessionVariables = {
-    NUSHELL = "${pkgs.nushell}/bin/nu";
-  };
+  # home.sessionVariables = {
+  #   NUSHELL = "${pkgs.nushell}/bin/nu";
+  # };
 
   home.packages = [
     pkgs.fastfetch

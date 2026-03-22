@@ -39,6 +39,10 @@
     pkgs.nushell
   ];
 
+  environment.variables = {
+    NUSHELL = "${pkgs.nushell}/bin/nu";
+  };
+
   # programs.bash.interactiveShellInit = ''
   #   if ! [ "$TERM" = "dumb" ]; then
   #     exec nu

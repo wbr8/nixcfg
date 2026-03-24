@@ -10,7 +10,7 @@
       owner = "vague-theme";
       repo = "vague.nvim";
       rev = "main";
-      sha256 = "sha256-+rtCstolNyC0j0oWtWvWPWZtzpX5cVNCXGBpRJ9Unsk=";
+      sha256 = "sha256-y6j5IpPCIxzsCi2TrRfqDGuL6jFcHEkIBWidY1ze50Y=";
     };
   };
 in {

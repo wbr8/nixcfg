@@ -18,6 +18,9 @@
     cascadia-code
     symbola
     nerd-fonts.symbols-only
+    noto-fonts
+    noto-fonts-cjk-sans
+    noto-fonts-cjk-serif
   ];
   fonts.fontDir.enable = true;
   fonts.fontconfig.defaultFonts = {

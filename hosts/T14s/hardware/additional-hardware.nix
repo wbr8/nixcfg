@@ -12,6 +12,14 @@
     inputs.hardware.nixosModules.common-pc-laptop-ssd
   ];
 
+  hardware.graphics = {
+    enable = true;
+    extraPackages = [
+      pkgs.intel-compute-runtime
+      pkgs.intel-media-driver
+    ];
+  };
+
   swapDevices = [
     {
       device = "/swap/swapfile";

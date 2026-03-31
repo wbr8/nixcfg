@@ -34,6 +34,11 @@
   };
 
   programs.nushell.enable = true;
+  programs.nushell.configFile = {
+    text = ''
+      $env.config.show_banner = false
+    '';
+  };
   
   programs.emacs = {
     enable = true;

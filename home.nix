@@ -24,6 +24,7 @@
     pkgs.cmakeMinimal
     pkgs.clang-tools
     pkgs.emacs-lsp-booster
+    pkgs.julia-bin
     inputs.hashcards.packages.x86_64-linux.default
   ];
 

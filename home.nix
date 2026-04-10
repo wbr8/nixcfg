@@ -25,6 +25,11 @@
     pkgs.clang-tools
     pkgs.emacs-lsp-booster
     pkgs.julia-bin
+
+    pkgs.opencode
+    pkgs.llama-cpp-vulkan
+    pkgs.python314Packages.huggingface-hub
+
     inputs.hashcards.packages.x86_64-linux.default
   ];
 

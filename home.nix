@@ -29,6 +29,7 @@
     pkgs.opencode
     pkgs.llama-cpp-vulkan
     pkgs.python314Packages.huggingface-hub
+    pkgs.nodejs
 
     inputs.hashcards.packages.x86_64-linux.default
   ];

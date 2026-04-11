@@ -18,6 +18,7 @@
       pkgs.intel-compute-runtime
       pkgs.intel-media-driver
       pkgs.vpl-gpu-rt
+      pkgs.vaapi-intel-hybrid
     ];
   };
 

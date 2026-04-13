@@ -18,7 +18,7 @@ in {
     enable = true;
 
     settings.vim = {
-      package = inputs.neovim-nightly-overlay.packages.${pkgs.system}.default;
+      # package = inputs.neovim-nightly-overlay.packages.${pkgs.system}.default;
 
       extraPlugins = with pkgs.vimPlugins; {
         vague-nvim = {

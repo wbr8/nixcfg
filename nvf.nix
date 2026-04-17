@@ -71,6 +71,7 @@ in {
         css.enable = true;
         json.enable = true;
         ts.enable = true;
+        julia.enable = true;
       };
 
       telescope.enable = true;

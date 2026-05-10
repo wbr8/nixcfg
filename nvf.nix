@@ -70,7 +70,7 @@ in {
         html.enable = true;
         css.enable = true;
         json.enable = true;
-        ts.enable = true;
+        typescript.enable = true;
         julia.enable = true;
       };
 

@@ -31,7 +31,7 @@
     pkgs.python314Packages.huggingface-hub
     pkgs.nodejs
 
-    inputs.hashcards.packages.x86_64-linux.default
+    # inputs.hashcards.packages.x86_64-linux.default
   ];
 
   programs.direnv = {
